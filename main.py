@@ -1,9 +1,9 @@
 import discord
 import os
-import random
-#from keep_alive import keep_alive
 
 client = discord.Client()
+
+COMMAND_STRING = 'faerie' + ' '
 
 @client.event
 async def on_ready():
@@ -17,5 +17,8 @@ async def on_message(message):
   if message.content.startswith('$hello'):
     await message.channel.send('Hello! Glad to see you fired up!')
 
-#keep_alive()
+  if message.content.startswith(COMMAND_STRING):
+    msg = message.content.split(COMMAND_STRING)[1]
+    await message.channel.send('You sent the message: {}'.format(msg))
+
 client.run(os.environ['TOKEN'])
