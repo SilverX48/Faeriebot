@@ -1,7 +1,7 @@
 import discord
 import os
 import random
-from keep_alive import keep_alive
+#from keep_alive import keep_alive
 
 client = discord.Client()
 
@@ -17,5 +17,5 @@ async def on_message(message):
   if message.content.startswith('$hello'):
     await message.channel.send('Hello! Glad to see you fired up!')
 
-keep_alive()
+#keep_alive()
 client.run(os.getenv('TOKEN'))
