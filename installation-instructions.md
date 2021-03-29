@@ -61,6 +61,8 @@ Run the following command to setup
 
 `eb init -i`
 
+It will require AWS account access setup. Supply the respective Access Key ID and Access Key Secret when asked
+
 When asked for the region, select `(1) us-east-1 (West Virginia)`
 
 When asked for the application, select `(1) faeriebot`
