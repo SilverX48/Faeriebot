@@ -6,7 +6,7 @@
 
 Download and install Python from [here](https://www.python.org/downloads/)
 
-Validate the installation by running `python --version`
+Validate the installation by running `python --version`. Please ensure you are using Python 3.7 and above
 
 Downloading the installer should automatically install Python and PIP
 
