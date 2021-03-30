@@ -6,7 +6,24 @@
 
 Download and install Python from [here](https://www.python.org/downloads/)
 
+Validate the installation by running `python --version`
+
 Downloading the installer should automatically install Python and PIP
+
+
+### Installing pip manually
+
+Confirm first that Python is installed by running `python --version`
+
+Download pip using the following Curl command:
+
+`curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`
+
+Once downloaded, run `python get-pip.py`
+
+The command will install pip
+
+Verify the installation with `pip --version` once done
 
 
 
