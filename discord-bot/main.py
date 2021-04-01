@@ -21,4 +21,7 @@ async def on_message(message):
     msg = message.content.split(COMMAND_STRING)[1]
     await message.channel.send('You sent the message: {}'.format(msg))
 
+  if message.content.startswith('si'):
+    await message.channel.send('give me the money')
+
 client.run(os.environ['TOKEN'])
